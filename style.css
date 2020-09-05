@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    margin:0;
+    padding:0;
+}
+:root {
+    text-transform: capitalize;
+    letter-spacing: 4px;
+    --primaryColor:rgb(255,0,0,.7);
+    --primary-gri-color: rgba(0,0,0,.02);
+}
+.stopwatch {
+    text-align: center;
+}
+.header {
+    font-size:80px;
+    font-weight:400;
+    margin:0;
+}
+.header span {
+    color:var(--primaryColor);
+}
+.watch {
+    font-size:40px;
+}
+.btn {
+    font-size:20px;
+    padding:0 4rem;
+    border:none;
+    border-radius:5px;
+    color:white;
+    cursor: pointer;
+    margin-bottom:2rem;
+}
+.start {
+    background:rgb(7, 77, 10,.7);
+}
+.split {
+    display:none;
+    background:rgb(0,0,0,.4)
+}
+.center {
+    display:inline-block;
+}
+.tb {
+    border-collapse: collapse;
+    background:var(--primary-gri-color);
+    border-radius:5px;
+    width:400px;
+    transition:all ease .4s;
+    opacity:0;
+    visibility:hidden
+}
+.tb th {
+    background:rgb(41, 41, 41,.7);
+    font-size:20px;
+    color:white;
+    font-weight:400;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding:.5rem 1rem;
+}
+.delete {
+    font-size:16px;
+    border:none;
+    background:rgb(0,0,0,.2);
+    color:white;
+    border-radius:5px;
+    cursor: pointer;
+}
+.comment {
+    font-size:16px;
+    font-weight:600;
+    text-transform: capitalize;
+}
+.red {
+    background:var(--primaryColor);
+}
+.block {
+    display:inline;
+}
+.showtb {
+    opacity:1;
+    visibility: visible;
+}
+.gri {
+    color:rgb(0,0,0,.5);
+}
+.black {
+    color:black;
+}
+@media screen and (max-width:500px) {
+    .header {
+        font-size:40px
+    }
+    .watch {
+        font-size:30px
+    }
+    .tb {
+        width:100px
+    }
+    .tb th {
+        padding:0 .5rem;
+        font-size:15px
+    }
+    .btn {
+        font-size:15px;
+        padding:0 1rem
+    }
+    .comment {
+        width:100px;
+        padding:0
+    }
+    .delete {
+        font-size:10px
+    }
+}
